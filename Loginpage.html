@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page and Register page</title>
+	 <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="Loginpage.css">
+</head>
+<header>
+		 <h2 class="heding">Covid-19</h2>
+</header>
+<body>
+	<div class="Box">
+		<div class="Button-box">
+			<div id="btn"></div>
+			<button type="button" class="btn" onclick="Login()">Login</button>
+			<button type="button" class="btn" onclick="Register()">Register</button>
+		</div>
+	<form id="Login" class="Input-group">
+		<input type="text" class="input-field" placeholder="Enter UserID">
+		<input type="text" class="input-field" placeholder="Enter Password">
+		<input type="checkbox" class="checkbox"><span>Remember Password</span>
+		<button type="Submit" class="Submit-btn text-light"><a href="#" class="text-light">Login</a></button>
+	</form>
+
+	<form id="Register" class="Input-group">
+		<input type="text" class="input-field" placeholder="Enter UserID">
+		<input type="email" class="input-field" placeholder="Enter EmailID">
+		<input type="text" class="input-field" placeholder="Enter Password">
+		<input type="checkbox" class="checkbox"><span>I am Agree to the Terms and Conditions</span>
+		<button type="Submit" class="Submit-btn text-light"><a href="#" class="text-light">Register</a></button></a>
+	</form>
+
+	</div>
+	</div>
+
+</body>
+<script>
+	var x=document.getElementById("Login");
+	var y=document.getElementById("Register");
+	var z=document.getElementById("btn");
+
+	function Register() {
+		x.style.left="+450px";
+		y.style.left="+50px";
+		z.style.left="+110px";
+	}
+
+	function Login() {
+		x.style.left="+50px";
+		y.style.left="+450px";
+		z.style.left="+0";
+	}
+
+
+</script>
+</html>
